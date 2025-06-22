@@ -4,6 +4,7 @@ import { searchByString } from "../crud/crudMovies";
 import { IMovie } from "../types/IMovie";
 import { Loader } from "../Components/Loader/Loader";
 import { MovieList } from "../Components/MovieList/MovieList";
+import { Footer } from "../Components/Footer/Footer";
 
 export const MainScreen = () => {
     const [loading, setLoading] = useState(false)
@@ -27,6 +28,7 @@ export const MainScreen = () => {
     <>
     <SearchForm handleSearch={resolvedora}/>
     {loading ?  (<Loader></Loader>) : (<MovieList  firstSearch={firstSearch} moviesArray={movies}/>)}
+    <Footer/>
     </>
   );
 };
