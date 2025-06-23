@@ -2,7 +2,7 @@ import axios from "axios"
 import { IMovie } from "../types/IMovie"
 import {OMDBResponse } from "../types/ICrudResponse"
 
-const API_KEY = "http://www.omdbapi.com/?i=tt3896198&apikey=14f30366"
+const API_KEY = "https://www.omdbapi.com/?i=tt3896198&apikey=14f30366"
 
 
 export const searchByString = async (search: string): Promise<IMovie[]> => {
